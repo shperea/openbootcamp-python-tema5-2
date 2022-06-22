@@ -7,11 +7,12 @@ def es_primo(numero):
             contador += 1
     return contador
 
-es_primo(int(input("Escribe un número entero: ")))
+numero = int(input("Escribe un número entero: "))
+es_primo(numero)
 
 if contador == 1:
-    print("Tu número tiene", contador, "divisor. Es primo.")
+    print("El número", numero, "tiene", contador, "divisor. Es primo.")
 elif contador == 2:
-    print("Tu número tiene", contador, "divisores. Es primo.")
+    print("El número", numero, "tiene", contador, "divisores. Es primo.")
 else:
-    print("Tu número tiene", contador, "divisores. No es primo.")
+    print("El número", numero, "tiene", contador, "divisores. No es primo.")
